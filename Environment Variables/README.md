@@ -1,3 +1,11 @@
+## Step 1: Build the Docker Image
+
+Run the following command in the terminal where your Dockerfile is located:
+
+```sh
+docker build -t flask-bg-color .
+```
+
 ## Run the Docker Container
 
 Pass the background color as an environment variable when running the container:
