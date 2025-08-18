@@ -1,10 +1,11 @@
 import os
-from flask import Flask
+from flask import Flask,render_template
 app = Flask(__name__)
+color = os.environ.get('APP_COLOR')
 
 @app.route("/")
 def main():
-    return "Welcome!"
+    return render_template("hello.html",color=color)
 
 @app.route('/how are you')
 def hello():
